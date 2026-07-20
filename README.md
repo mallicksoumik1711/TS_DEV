@@ -20,3 +20,22 @@
         a = 42 not allowed
 
         annotations => :number, :string, :boolean
+
+## Union and any
+    * Union 
+        const id: number | string;
+        id = 23
+        id = "23"
+        id will accept both. 
+
+        const status: '404' | '301' | '200'
+        now status cannot have any values other than '404' '301' '200'
+        not even in strings (if other)
+        
+    * any
+        it will accept any values whether its number boolean string anything
+        avoid using it
+
+    * undefined with union
+        when not sure if the data exist or not
+        const response : 'string' | undefined
