@@ -39,3 +39,15 @@
     * undefined with union
         when not sure if the data exist or not
         const response : 'string' | undefined
+
+## Intersection
+    * combining two different types with one type/classes/object
+      type Oil = {
+        refined: string
+      }
+      type Water = {
+        mineral: string
+      }
+      type Liquid = Oil & Water
+
+    * readonly - property after setting 1 time we cannot change this anywhere
