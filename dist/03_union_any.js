@@ -26,5 +26,13 @@ for (let i = 0; i < 5; i++) {
         break;
     }
 }
-console.log(num);
+function getusername(name) {
+    console.log(name);
+}
+getusername("Alexroper");
+const mix = {
+    refined: "Refined",
+    mineral: "Mineral"
+};
+console.log(mix);
 //# sourceMappingURL=03_union_any.js.map

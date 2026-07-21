@@ -34,4 +34,35 @@ for(let i=0; i<5; i++){
     }
 }
 
-console.log(num)
+// console.log(num)
+
+// -------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+// union and intersection
+
+// union
+
+type Username = "AlexPrabhat" | "MashroomMuinds" | "Alexroper"
+
+function getusername(name: Username){
+    console.log(name)
+}
+
+getusername("Alexroper")
+
+// ---------------------------------------------------
+
+// Intersection
+
+type Oil = {
+    refined: string
+}
+type Water = {
+    mineral: string
+}
+type Liquid = Oil & Water
+
+const mix: Liquid = {
+    refined: "Refined",
+    mineral: "Mineral"
+}
