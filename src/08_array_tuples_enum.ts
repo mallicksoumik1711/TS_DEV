@@ -34,3 +34,35 @@ const cars: readonly string[] = ['one', 'two']
 
 // Tuples
 
+let userTupple: [string, number, boolean?] = ["alex", 23]
+userTupple = ["menance", 90, false]
+
+// readonly tupples
+const tuppleUser: readonly [string, number] = ["alex", 78]
+
+// named tuples
+const namedTupples: [name: string, id: number] = ["alex", 45]
+
+// ------------------------------------------------------------------------------
+
+// Enums
+
+enum Location {
+    MUMBAI,
+    PUNE,
+    BENGALURU
+}
+
+function useLocation(loc: Location){
+    console.log(loc)
+}
+
+// const area = Location.BENGALURU
+useLocation(Location.BENGALURU)
+// useLocation("Mumnbia")                     //-> error not suitable with Location
+
+
+// Heterogeneous enums -> different type (not recomended)
+// enums are typically same type either number, strings etc
+
+
