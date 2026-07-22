@@ -34,5 +34,4 @@ const mix = {
     refined: "Refined",
     mineral: "Mineral"
 };
-console.log(mix);
 //# sourceMappingURL=03_union_any.js.map
