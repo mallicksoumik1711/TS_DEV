@@ -8,6 +8,7 @@ function addAllNums(...nums) {
     });
     return result;
 }
+console.log(addAllNums(1, 2, 3, 4, 5, +true));
 console.log(typeof +true);
 // unary operator converts the other datatype into number
 console.log(`Value of +true: ${+true}`);
@@ -18,7 +19,6 @@ console.log(`Value of +"123abc: ${+"123abc"}`);
 console.log(`Value of -"123abc": ${-"123abc"}`);
 console.log(`Value of +"123": ${+"123"}`);
 console.log(`Value of -"123": ${-"123"}`);
-console.log(addAllNums(1, 2, 3, 4, 5, +true));
 const arrowFunc = (...nums) => {
     let result = 0;
     nums.forEach((num) => {

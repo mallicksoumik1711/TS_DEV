@@ -1,0 +1,1 @@
+{"version":3,"file":"02_type_vs_interface.js","sourceRoot":"","sources":["../../src/TS_FCC/02_type_vs_interface.ts"],"names":[],"mappings":";AAAA,oBAAoB;AACpB,wBAAwB;AACxB,uBAAuB;AACvB,IAAI;;AAkCJ,MAAM,QAAQ,GAAQ;IAClB,OAAO,EAAE,OAAO;IAChB,KAAK,EAAE,IAAI;IACX,IAAI;QACA,OAAO,CAAC,GAAG,CAAC,MAAM,CAAC,CAAA;IACvB,CAAC;CACJ,CAAA;AAED,OAAO,CAAC,GAAG,CAAC,QAAQ,CAAC,IAAI,EAAE,CAAC,CAAA"}
