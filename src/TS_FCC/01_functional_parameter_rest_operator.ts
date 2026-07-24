@@ -1,0 +1,33 @@
+// rest parameter are used by spread operator ...variableName
+
+function addAllNums(...nums: number[]) : number {
+    let result = 0;
+    nums.forEach((num)=>{
+        result += num
+    })
+    return result
+}
+console.log(addAllNums(1,2,3,4,5, +true)) 
+
+console.log(typeof +true)
+// unary operator converts the other datatype into number
+console.log(`Value of +true: ${+true}`)
+console.log(`Value of -true: ${-true}`)
+console.log(`Value of +false: ${+false}`)
+console.log(`Value of -false: ${-false}`)
+console.log(`Value of +"123abc: ${+"123abc"}`)
+console.log(`Value of -"123abc": ${-"123abc"}`)
+console.log(`Value of +"123": ${+"123"}`)
+console.log(`Value of -"123": ${-"123"}`)
+
+
+
+const arrowFunc = (...nums: number[]) : number => {
+    let result = 0;
+    nums.forEach((num)=>{
+        result += num
+    })
+    return result
+}
+
+console.log(arrowFunc(10,20,30,40,50))
