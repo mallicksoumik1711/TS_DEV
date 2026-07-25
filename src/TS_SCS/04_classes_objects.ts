@@ -7,7 +7,8 @@ class Cinema{
     // when can we use this keyword? => when values are defined in class itself
 
     // constructor(title: string, cinematograpgy: string, cast: string[], totalPlays: number, isHit?: boolean){}
-    constructor(public title: string, public cinematograpgy: string, public cast: string[], public totalPlays: number, public isHit?: boolean){}
+    constructor(public title: string, public cinematograpgy: string, public cast: string[], public totalPlays: number, public isHit?: boolean){}     // -> parameter properties
+    // when we define parameters inside constructor only
 }
 
 const cinemaOne = new Cinema("Cinema One", "IMAX", ["Cast1, cast2, cast3, cast4"], 23)
