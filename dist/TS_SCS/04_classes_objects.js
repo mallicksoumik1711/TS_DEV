@@ -18,7 +18,7 @@ class Cinema {
         this.cast = cast;
         this.totalPlays = totalPlays;
         this.isHit = isHit;
-    }
+    } // -> parameter properties
 }
 const cinemaOne = new Cinema("Cinema One", "IMAX", ["Cast1, cast2, cast3, cast4"], 23);
 console.log(cinemaOne);
