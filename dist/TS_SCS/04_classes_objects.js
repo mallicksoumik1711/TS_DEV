@@ -55,4 +55,36 @@ console.log(carObj);
 // carObj.bmw = "Chevrolette"
 carObj.changeCar("Mitsubshi");
 console.log(carObj);
+// protected
+// - same as private but extended classes can also use the variables
+class Employee {
+    employeeId = "1234abcd";
+}
+class HumanResource extends Employee {
+    changeId(id) {
+        return this.employeeId = id;
+    }
+}
+const doc = new HumanResource();
+console.log(doc.changeId("qwerty98765"));
+// ---------------------------------------------------------------------------------------------
+// SUPER KEYWORD
+// passes contructor of extended class
+// basically used to get the values of parent classes
+// derived classes can use the parameters of class from which its derived - super
+class Phone {
+    phone;
+    constructor(phone) {
+        this.phone = phone;
+    }
+}
+class IPhone extends Phone {
+    iphone;
+    constructor(iphone, phone) {
+        super(phone);
+        this.iphone = iphone;
+    }
+}
+const iphoneObj = new IPhone("IPhone from extended class", "Phone class variable");
+console.log(iphoneObj);
 //# sourceMappingURL=04_classes_objects.js.map
