@@ -30,3 +30,34 @@ class Music{
 
 const guitar = new Music("A-Minor", "Guitar")
 guitar.getDetailsOfMusic()
+
+
+
+// ---------------------------------------------------------------------------------------------------------------
+
+
+
+// ACCESS MODIFIERS
+
+// public - values can be accessed anywhere and can be modified
+//        - can be inside class, outside class , extended class etc
+
+// private - can be accessed only within class 
+//         - can be changed by methods
+
+class Car{
+    private bmw: string
+    constructor(bmw: string){
+        this.bmw = bmw
+    }
+
+    changeCar(carName: string):void{
+        this.bmw = carName
+    }
+}
+
+const carObj = new Car("BMW")
+console.log(carObj)
+// carObj.bmw = "Chevrolette"
+carObj.changeCar("Mitsubshi")
+console.log(carObj)
