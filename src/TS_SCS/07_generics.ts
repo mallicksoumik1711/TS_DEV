@@ -41,3 +41,37 @@ userDet({
     userId: 'ujj'
 })
 
+// ------------------------------------------------------------------------------------
+
+// Generic classes
+
+class Car<T>{
+    model: T
+    constructor(model: T){
+        this.model = model
+    }
+    showModel(){
+        console.log(this.model)
+    }
+}
+
+const obj1 = new Car<string>("BMW")
+obj1.showModel()
+
+const obj2 = new Car<number>(89777867)
+obj2.showModel()
+
+// ----------------------------------------------------------------------------------
+
+// important while studying generics
+
+function returningFunction<T>(num1: T): T{
+    // return "Hey"         // even though when T will be string when function is called
+    // return 100           // even when T is number when called
+
+    // this happens because ts doesn't know what will be the values of T before calling.
+    
+    return num1
+}
+
+returningFunction(78)
