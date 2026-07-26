@@ -21,3 +21,23 @@ console.log(userId<string>("ONE HUNDRED"))
 console.log(userId<Object>({}))
 console.log(userId<Object>(function name(){}))
 
+// ------------------------------------------------------------------------------------
+
+// Generics Interface
+
+interface User<T>{
+    name: string,
+    age: number,
+    userId: T
+}
+
+function userDet(val: User<number | string>): User<number | string>{
+    return val
+}
+
+userDet({
+    name: "",
+    age: 34,
+    userId: 'ujj'
+})
+
